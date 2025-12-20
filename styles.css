@@ -1,4 +1,3 @@
-/* ====== Reset ====== */
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
@@ -11,7 +10,6 @@ body {
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
 
-/* ====== Background Orbs ====== */
 .bg { position: fixed; inset: 0; z-index: -1; overflow: hidden; }
 .bg-orb {
   position: absolute;
@@ -25,7 +23,6 @@ img { max-width: 100%; display: block; }
 .orb-2 { bottom: -180px; right: -160px; background: #a78bfa; }
 .orb-3 { top: 35%; left: 55%; background: #22c55e; opacity: 0.25; }
 
-/* ====== Layout ====== */
 .container {
   width: min(1100px, calc(100% - 48px));
   margin: 0 auto;
@@ -74,7 +71,6 @@ img { max-width: 100%; display: block; }
   background: rgba(255,255,255,0.06);
 }
 
-/* ====== Hero ====== */
 .hero {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
@@ -151,7 +147,6 @@ h1 {
 .quick-label { display: block; font-size: 0.85rem; color: rgba(255,255,255,0.62); margin-bottom: 2px; }
 .quick-value { font-weight: 600; color: rgba(255,255,255,0.9); }
 
-/* ====== Profile Card ====== */
 .profile-card {
   height: 100%;
   padding: 18px;
@@ -202,7 +197,6 @@ h1 {
   font-size: 0.98rem;
 }
 
-/* ====== Sections ====== */
 .section { padding: 38px 0 6px; }
 .section-head h2 {
   margin: 0;
@@ -242,7 +236,6 @@ h1 {
   font-size: 0.9rem;
 }
 
-/* ====== Projects ====== */
 .project-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
 .badge {
   font-size: 0.85rem;
@@ -264,14 +257,12 @@ h1 {
 }
 .project-links a:hover { background: rgba(255,255,255,0.08); }
 
-/* ====== Skills ====== */
 .skill-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
 }
 
-/* ====== Contact ====== */
 .muted { color: rgba(255,255,255,0.70); }
 .small { font-size: 0.95rem; }
 .links { display: grid; gap: 10px; }
@@ -285,7 +276,6 @@ h1 {
 }
 .links a:hover { background: rgba(255,255,255,0.08); }
 
-/* ====== Footer ====== */
 .footer {
   margin-top: 28px;
   padding-top: 18px;
@@ -293,7 +283,6 @@ h1 {
   color: rgba(255,255,255,0.6);
 }
 
-/* ====== Responsive ====== */
 @media (max-width: 940px) {
   .hero { grid-template-columns: 1fr; }
   .grid.three { grid-template-columns: 1fr; }
@@ -301,4 +290,11 @@ h1 {
   .nav { gap: 8px; }
   .nav a { padding: 10px 10px; }
   .quick { grid-template-columns: 1fr; }
+}
+
+.profile-summary p {
+  margin: 1rem 0 1.25rem;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.95rem;
+  line-height: 1.5;
 }

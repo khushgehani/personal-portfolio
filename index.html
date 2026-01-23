@@ -3,201 +3,174 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Khush Gehani | Personal Site</title>
-  <meta name="description" content="Khush Gehani — personal portfolio, projects, and contact." />
+  <title>Khush Gehani | CS & Accounting</title>
+  <meta name="description" content="Khush Gehani — CS & Accounting Student. Learning high-frequency trading, C++, and finance." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <div class="bg">
-    <div class="bg-orb orb-1"></div>
-    <div class="bg-orb orb-2"></div>
-    <div class="bg-orb orb-3"></div>
-  </div>
+  <div class="grid-bg"></div>
 
   <header class="header">
-    <a class="logo" href="#top" aria-label="Go to top">
-      <span class="logo-dot"></span> KG
+    <a class="logo" href="#top">
+      KG<span class="cursor">_</span>
     </a>
 
-    <nav class="nav" aria-label="Primary">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact" class="nav-cta">Contact</a>
+    <nav class="nav">
+      <a href="#about">01. About</a>
+      <a href="#projects">02. Projects</a>
+      <a href="#contact" class="nav-cta">03. Contact</a>
     </nav>
   </header>
 
   <main id="top" class="container">
-    <section class="hero">
+    <section id="about" class="hero">
       <div class="hero-left">
-        <p class="pill">Computer Science • Finance • The Villages, FL</p>
+        <div class="status-bar">
+          <span class="status-dot"></span>
+          <span class="mono">System Online • The Villages, FL</span>
+        </div>
 
         <h1>
-          Hi, I’m <span class="accent">Khush Gehani</span>.<br />
+          CS & ACCOUNTING<br />
+          STUDENT<span class="accent">.</span>
         </h1>
 
         <p class="subhead">
-          I enjoy building tools that solve small, annoying problems- things I wish already existed :)
+          Working to master the engineering behind high-performance financial tools. 
+          Currently learning <span class="highlight">Market Microstructure</span>, <span class="highlight">C++</span>, and <span class="highlight">Distributed Systems</span>.
         </p>
 
         <div class="hero-actions">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a
-            class="btn ghost"
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=khushg2006@gmail.com&su=Opportunity%20Inquiry"
-            target="_blank"
-            rel="noreferrer noopener"
-          >Get in Touch</a>
-        </div>
-
-        <div class="quick">
-          <div class="quick-card">
-            <span class="quick-label">Email</span>
-            <a
-              class="quick-value"
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=khushg2006@gmail.com"
-              target="_blank"
-              rel="noreferrer noopener"
-            >khushg2006@gmail.com</a>
-          </div>
-          <div class="quick-card">
-            <span class="quick-label">Location</span>
-            <span class="quick-value">The Villages, FL</span>
-          </div>
+          <a class="btn primary" href="#projects">View Work</a>
+          <a class="btn ghost" href="resume.pdf" target="_blank">View Resume</a>
         </div>
       </div>
 
       <div class="hero-right">
         <div class="profile-card">
-          <div class="avatar"><span>K</span></div>
-
-          <div class="profile-meta">
-            <h2>Khush Gehani</h2>
-            <p>Early-career • CS & Finance</p>
+          <div class="card-header">
+            <span class="mono">user_profile.json</span>
           </div>
-
-          <div class="profile-links">
-            <a href="https://github.com/khushgehani" target="_blank" rel="noreferrer noopener">GitHub</a>
-            <a href="https://www.linkedin.com/in/khush-gehani-a1026439b/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
-            <a href="resume.pdf" target="_blank" rel="noreferrer noopener">Resume</a>
-          </div>
-         
-          <div class="profile-summary">
-    <p>
-    Focused on building strong software fundamentals, with hands-on experience
-    in customer-facing operations, leadership, and high-responsibility environments.
-    Pursuing a double-major in CS & Finance.
-    </p>
-</div>
-          <div class="profile-note">
-            <p>
-              Open to internships in software, IT, and technology-adjacent roles
-              near Orlando / The Villages and remote.
-            </p>
+          <div class="profile-content">
+            <div class="key-value">
+              <span class="key">"name":</span>
+              <span class="value">"Khush Gehani"</span>
+            </div>
+            <div class="key-value">
+              <span class="key">"role":</span>
+              <span class="value">"CS & Accounting Student"</span>
+            </div>
+            <div class="key-value">
+              <span class="key">"memory":</span>
+              <span class="value">"Random Access"</span>
+            </div>
+            <div class="key-value">
+              <span class="key">"status":</span>
+              <span class="value highlight">"Open to Internships"</span>
+            </div>
+            
+            <div class="profile-links">
+              <a href="https://github.com/khushgehani" target="_blank">GitHub</a>
+              <a href="https://www.linkedin.com/in/khush-gehani-a1026439b/" target="_blank">LinkedIn</a>
+              <a href="mailto:khushg2006@gmail.com">Email</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-<section id="projects" class="section">
-  <div class="section-head">
-    <h2>Projects</h2>
-    <p>A selection of projects demonstrating practical problem-solving and foundational software skills.</p>
-  </div>
-
-  <div class="grid three">
-    <article class="card project">
-      <h3>CaseBeacon AI</h3>
-      <p>
-       A full-stack web application designed to help immigrants better understand their USCIS-related documents using AI, without requiring logins or sensitive data storage
-      </p>
-      <div class="project-links">
-        <a href="https://casebeacon.netlify.app/" target="_blank" rel="noreferrer noopener">
-          Live
-        </a>
-        <a href="https://github.com/khushgehani/casebeacon" target="_blank" rel="noreferrer noopener">
-          Code
-        </a>
-      </div>
-    </article>
-
-    <article class="card project">
-      <h3>LIMITLESS</h3>
-      <p>
-      A high-frequency trading simulation powered by a multi-threaded C++ backend. Implements Red-Black Trees for order matching and WebSockets for real-time terminal-style visualization. hi
-      </p>
-      <div class="project-links">
-        <a href="https://limitlesstrade.netlify.app/" target="_blank" rel="noreferrer noopener">
-          Live
-        <a href="https://github.com/khushgehani/limitless" target="_blank" rel="noreferrer noopener">
-          Code
-        </a>
-      </div>
-    </article>
-  </div>
-    </article>
-
-    <article class="card project">
-      <h3>Community Health Access Dashboard</h3>
-      <p>
-      Built after noticing how hard it was to find nearby healthcare access data in one place.
-      </p>
-      <div class="project-links">
-        <a href="https://khushgehani.github.io/community-health-access-dashboard/" target="_blank" rel="noreferrer noopener">
-          Live
-        <a href="https://github.com/khushgehani/personal-portfolio" target="_blank" rel="noreferrer noopener">
-          Code
-        </a>
-      </div>
-    </article>
-  </div>
-</section>
-
-
-    <section id="contact" class="section">
+    <section id="projects" class="section">
       <div class="section-head">
-        <h2>Contact</h2>
-        <p>Feel free to reach out for opportunities or questions.</p>
+        <h2>Projects</h2>
+        <div class="line"></div>
       </div>
 
-      <div class="grid two">
-        <article class="card">
-          <h3>Email</h3>
-          <a
-            class="btn primary"
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=khushg2006@gmail.com&su=Opportunity%20Inquiry"
-            target="_blank"
-            rel="noreferrer noopener"
-          >Send Email</a>
+      <div class="grid">
+        <article class="card project featured">
+          <div class="card-top">
+            <h3>LIMITLESS</h3>
+            <div class="live-indicator">
+              <span class="blink"></span> LIVE SYSTEM
+            </div>
+          </div>
+          <p class="project-desc">
+            A low-latency trading system engineered in C++ to simulate modern market microstructure. Features a custom limit order book using Red-Black Trees for <strong>O(log N)</strong> execution, a multi-threaded market maker, and a distributed React dashboard.
+          </p>
+          <div class="tags">
+            <span>C++</span>
+            <span>Red-Black Trees</span>
+            <span>Docker</span>
+            <span>WebSockets</span>
+          </div>
+          <div class="project-links">
+            <a href="https://limitlesstrade.netlify.app/" target="_blank">Enter Simulation -></a>
+            <a href="https://github.com/khushgehani/limitless" target="_blank">Source Code -></a>
+          </div>
         </article>
 
-        <article class="card">
-          <h3>Links</h3>
-          <div class="links">
-            <a href="https://github.com/khushgehani" target="_blank" rel="noreferrer noopener">GitHub</a>
-            <a href="https://www.linkedin.com/in/khush-gehani-a1026439b/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
-            <a href="resume.pdf" target="_blank" rel="noreferrer noopener">Resume (PDF)</a>
+        <article class="card project">
+          <div class="card-top">
+            <h3>CaseBeacon AI</h3>
+            <div class="live-indicator">
+              <span class="blink"></span> LIVE SYSTEM
+            </div>
+          </div>
+          <p class="project-desc">
+            Full-stack application helping immigrants decode USCIS documents. Integrates context-aware LLMs (Gemini) to parse complex legal jargon into plain English without retaining sensitive user data.
+          </p>
+          <div class="tags">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>Gemini AI</span>
+            <span>Docker</span>
+          </div>
+          <div class="project-links">
+            <a href="https://casebeacon.netlify.app/" target="_blank">Visit -></a>
+            <a href="https://github.com/khushgehani/casebeacon" target="_blank">Source Code -></a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="card-top">
+            <h3>Health Access Dashboard</h3>
+          </div>
+          <p class="project-desc">
+             Geospatial visualization tool mapping healthcare accessibility gaps by ZIP code using dynamic filtering and interchangeable public datasets.
+          </p>
+          <div class="tags">
+            <span>JavaScript</span>
+            <span>Geospatial Data</span>
+            <span>HTML/CSS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://khushgehani.github.io/community-health-access-dashboard/" target="_blank">Visit -></a>
+            <a href="https://github.com/khushgehani/personal-portfolio" target="_blank">Source Code -></a>
           </div>
         </article>
       </div>
     </section>
 
+    <section id="contact" class="section">
+      <div class="contact-box">
+        <div class="contact-text">
+          <h2>Let's Connect</h2>
+          <p>
+            Whether you have a question about my work, a potential opportunity, or just want to discuss tech!
+          </p>
+        </div>
+        <a class="btn primary big" href="mailto:khushg2006@gmail.com?subject=Hello%20Khush">Initialize Contact</a>
+      </div>
+    </section>
+
     <footer class="footer">
-      <p>© 2025 Khush Gehani • Built with HTML & CSS</p>
+      <p class="mono">:: SYSTEM_READY :: © 2025 Khush Gehani</p>
     </footer>
   </main>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
